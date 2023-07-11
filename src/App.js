@@ -1,7 +1,6 @@
 import React from "react";
-import { Counter } from "./features/counter/Counter";
 import { PostsList } from "./features/posts/PostsList";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom/dist";
+import { BrowserRouter, Route, Routes } from "react-router-dom/dist";
 import "./App.css";
 import { AddPostForm } from "./features/posts/AddPostForm";
 import { SinglePostPage } from "./features/posts/SinglePostPage";
@@ -30,7 +29,6 @@ function App() {
           />
           <Route path="/posts/:postId" element={<SinglePostPage />} />
           <Route path="/editPost/:postId" element={<EditPostForm />} />
-          <Route path="/counter" element={<Counter />} />
         </Routes>
       </BrowserRouter>
     </div>

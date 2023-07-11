@@ -293,7 +293,7 @@ form>input, textarea, button, select {
   padding: .6em !important;
 }
 select, button {
-  width: calc(100% + 15px)
+  width: calc(100% + 17px)
 }
 form {
   text-align: left;
@@ -315,7 +315,18 @@ button {
   text-decoration: none;
 }
 .container {
-  max-width:  800px;
+  max-width:  900px;
   width: 100%;
   margin: 0 auto
 }
+.reaction-button {
+  display: inline-block;
+  width: auto;
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer;
+}
+.reaction-button:hover {
+  background: rgba(100, 100, 100, .2) !important;
+}
+a {text-decoration: none;}
