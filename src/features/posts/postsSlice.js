@@ -1,1 +1,15 @@
-// Tutorial following https://redux.js.org/tutorials/essentials/part-3-data-flow to create a blog app with react redux
+const { createSlice } = require("@reduxjs/toolkit")
+
+
+const initialState = [
+    {id: '1', title: 'First Post!', content: 'Hello!'},
+    {id: '2', title: 'Second Post!', content: 'More text!'}
+]
+
+const postsSlice = createSlice({
+    name: 'posts',
+    initialState,
+    reducers: {}
+})
+
+export default postsSlice.reducer
